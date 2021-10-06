@@ -45,13 +45,13 @@
                                         echo 'nav-link scrollto active';
                                     } ?>" href="<?php echo site_url('C_home/ensiklopedia') ?>">Ensiklopedia Kematangan Coklat</a></li>
 
-                    <li><a class="<?php if ($this->uri->uri_string() == 'C_home') {
+                    <li><a class="<?php if ($this->uri->uri_string() == 'C_demo') {
                                         echo 'nav-link scrollto active';
-                                    } ?>" href="#services">Cek Kematangan</a></li>
+                                    } ?>" href="<?php echo site_url('C_demo') ?>">Cek Kematangan</a></li>
 
-                    <li><a class="<?php if ($this->uri->uri_string() == 'C_home') {
+                    <li><a class="<?php if ($this->uri->uri_string() == 'C_home/about') {
                                         echo 'nav-link scrollto active';
-                                    } ?>" href="#portfolio">Kelompok Kami</a></li>
+                                    } ?>" href="<?php echo site_url('C_home/about') ?>">Kelompok Kami</a></li>
 
                     <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->

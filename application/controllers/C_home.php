@@ -25,6 +25,16 @@ class C_home extends CI_Controller
         $this->load->view('home/V_ensik');
         $this->load->view('template/footer');
     }
+
+    function about()
+    {
+        $data = array(
+            'title' => "Our Team"
+        );
+        $this->load->view('template/header', $data);
+        $this->load->view('home/V_about');
+        $this->load->view('template/footer');
+    }
 }
     
     /* End of file C_home.php */
