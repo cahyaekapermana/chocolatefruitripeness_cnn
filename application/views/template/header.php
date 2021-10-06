@@ -37,10 +37,21 @@
                                                                                                 } ?>"><i class="glyphicon glyphicon-list-alt fa-lg"></i> List Patients</a> -->
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="<?php echo site_url('C_home') ?>">Beranda</a></li>
-                    <li><a class="nav-link scrollto" href="#about">Ensiklopedia Kematangan Coklat</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Cek Kematangan</a></li>
-                    <li><a class="nav-link scrollto" href="#portfolio">Kelompok Kami</a></li>
+                    <li><a class="<?php if ($this->uri->uri_string() == 'C_home') {
+                                        echo 'nav-link scrollto active';
+                                    } ?>" href="<?php echo site_url('C_home') ?>">Beranda</a></li>
+
+                    <li><a class="<?php if ($this->uri->uri_string() == 'C_home/ensiklopedia') {
+                                        echo 'nav-link scrollto active';
+                                    } ?>" href="<?php echo site_url('C_home/ensiklopedia') ?>">Ensiklopedia Kematangan Coklat</a></li>
+
+                    <li><a class="<?php if ($this->uri->uri_string() == 'C_home') {
+                                        echo 'nav-link scrollto active';
+                                    } ?>" href="#services">Cek Kematangan</a></li>
+
+                    <li><a class="<?php if ($this->uri->uri_string() == 'C_home') {
+                                        echo 'nav-link scrollto active';
+                                    } ?>" href="#portfolio">Kelompok Kami</a></li>
 
                     <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
